@@ -2,7 +2,7 @@ from upkeep_phase import UpkeepPhase
 from equipment import Equipment
 from phases import HuntingPhase, CombatPhase
 from player import Player
-from quarry import Robot
+from quarry import Quarry
 
 def main():
     # Din kod här
