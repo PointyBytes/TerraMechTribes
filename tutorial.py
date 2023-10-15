@@ -1,4 +1,4 @@
-from base_building import BaseBuilding
+from upkeep_phase import BaseBuilding
 from equipment import Equipment
 from phases import HuntingPhase, CombatPhase, UpkeepPhase
 from player import Player
