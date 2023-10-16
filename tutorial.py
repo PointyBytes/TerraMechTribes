@@ -14,7 +14,31 @@ class Tutorial:
 
     def start_tutorial(self):
         print("Welcome to the Tutorial!")
-        # Initialization logic here, such as creating Player objects and setting the starting scene
+        self.print_opening_scene()
+        # Additional initialization logic here, such as creating Player objects and setting the starting scene
+
+    def print_opening_scene(self):
+        print("------------------------------------------------------")
+        print("You wake up in a glade, bordering a bayou-like environment.")
+        print(
+            "Disoriented, with no memory of who you are, the silence around you is suddenly shattered."
+        )
+        print(
+            "A deep groaning noise fills the air. A gigantic salamander bursts from the water."
+        )
+        print(
+            "In a flash, it grabs one of the newly awakened individuals, pulling them into the depths."
+        )
+        print("Screams of panic and pain fill the air.")
+        print(
+            "You hear the groaning again, closer this time. You don't want to share that fate."
+        )
+        print(
+            "Frantically, you search the ground for anything to defend yourself with."
+        )
+        print("------------------------------------------------------")
+
+    # ... rest of the code
 
     def run_combat_phase(self):
         print("Entering Combat Phase...")
