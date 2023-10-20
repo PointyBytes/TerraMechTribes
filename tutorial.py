@@ -1,6 +1,6 @@
 from upkeep_phase import BaseBuilding
 from equipment import Equipment
-from phases import HuntingPhase, CombatPhase, UpkeepPhase
+from combat import HuntingPhase, CombatPhase, UpkeepPhase
 from player import Player
 from quarry import Quarry  # Importing the base Quarry class
 
