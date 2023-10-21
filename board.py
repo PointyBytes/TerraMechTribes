@@ -25,18 +25,24 @@ class Terrain:
 
 
 class Board:
-    def __init__(self, rows=12, columns=12):
-        self.rows = rows
-        self.columns = columns
-        self.board = self.create_board()
+    def __init__(self, size=12):
+        self.size = size
+        self.board = self.initialize_board()
 
-    def create_board(self):
-        # Example: Terrain('forest', False, True, True)
-        return [
-            [Terrain("plain", True, False, False) for _ in range(self.columns)]
-            for _ in range(self.rows)
-        ]
+    def initialize_board(self):
+        """Initialize a board with '-' representing empty squares."""
+        return [["-" for _ in range(self.size)] for _ in range(self.size)]
 
-    def display_board(self):
-        for row in self.board:
-            print([cell.type for cell in row])
+    def board_to_string(self):
+        """Convert the board to a string representation."""
+        return "\n".join([" ".join(row) for row in self.board])
+
+    def display(self):
+        """Display the board."""
+        print(self.board_to_string())
+
+
+# Example usage:
+if __name__ == "__main__":
+    my_board = Board()
+    my_board.display()
