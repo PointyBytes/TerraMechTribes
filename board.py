@@ -8,6 +8,11 @@ class Terrain:
             "movement_cost": 1,
             "keywords": ["climbable", "impassable", "blocks_sight"],
         },
+        "tree_small": {
+            "size": (2, 2),
+            "movement_cost": 0,
+            "keywords": ["impassable", "blocks_sight"],
+        }
         # ...add more here
     }
 
