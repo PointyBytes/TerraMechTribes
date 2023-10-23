@@ -1,5 +1,7 @@
+# The Terrain class represents different types of terrain on the board.
 class Terrain:
-    # Centralized dictionary containing terrain types and their properties
+    # Centralized dictionary containing terrain types and their properties.
+    # TODO: Consider adding more advanced terrain types or special rules for certain types.
     terrain_types = {
         "water": {"size": (2, 4), "movement_cost": 2, "keywords": ["drown"]},
         "shoreline": {"size": (2, 4), "movement_cost": 2, "keywords": []},
@@ -13,10 +15,11 @@ class Terrain:
             "movement_cost": 0,
             "keywords": ["impassable", "blocks_sight"],
         }
-        # ...add more here
+        # TODO: Add more terrain types here.
     }
 
     def __init__(self, terrain_type):
+        # Validate the terrain type and initialize its properties.
         if terrain_type not in Terrain.terrain_types:
             raise ValueError(f"Invalid terrain type: {terrain_type}")
 
@@ -29,10 +32,11 @@ class Terrain:
         return f"Terrain Type: {self.type}, Size: {self.size}, Movement Cost: {self.movement_cost}, Keywords: {self.keywords}"
 
 
+# The Board class represents the game board.
 class Board:
     def __init__(self, size=12):
-        self.size = size
-        self.board = self.initialize_board()
+        self.size = size  # Board dimensions, default is 12x12.
+        self.board = self.initialize_board()  # Initialize the board with empty squares.
 
     def initialize_board(self):
         """Initialize a board with '-' representing empty squares."""
@@ -45,6 +49,9 @@ class Board:
     def display(self):
         """Display the board."""
         print(self.board_to_string())
+
+    # TODO: Add methods to place Terrain objects on the board.
+    # TODO: Add methods to move entities around the board.
 
 
 # Example usage:
