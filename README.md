@@ -7,7 +7,6 @@ This is a board game with role-playing elements inspired by a variety of literat
 1. **Base Building**: Players start by building a base, making difficult moral choices that will shape their environment.
 2. **Hunting Phase**: Players form hunting parties to go out into the Zone to hunt for dangerous robotic creatures.
 3. **Combat Phase**: Engage in tactical battles against AI-driven robotic foes.
-
 ## Classes and Files
 
 This project contains several Python files each housing one or more classes. They are as follows:
@@ -17,10 +16,9 @@ This project contains several Python files each housing one or more classes. The
 - `entity.py`: Houses the `Survivor` class and potentially shared rules for quarry entities.
 - `player.py`: Defines the `Player` class, which holds RPG elements like strength, intelligence, etc.
 - `tutorial.py`: Designed for guiding new players through the game mechanics.
-- `hunting.py`: Contains the `HuntingPhase` class to manage the hunting phase.
+- `hunt.py`: Contains the `HuntingPhase` class to manage the hunting phase and the exploration of different biotopes. Replaces the need for a `zone.py` file.
 - `combat.py`: Contains the `CombatPhase` and `ActionManager` classes to manage the combat phase.
 - `upkeep_phase.py`: Manages tasks and events that happen in the upkeep phase.
-- `zone.py`: Defines the properties and behaviors of the Zone.
 - `equipment.py`: Manages the various types of equipment that can be used in the game.
 - `quarry.py`: Defines the types of quarry that can be hunted, starting with Salamanders.
 
