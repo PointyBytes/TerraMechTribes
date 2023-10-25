@@ -35,7 +35,11 @@ class Salamander(Quarry):
         # Example terrain setup
         self.terrain_setup = [
             {"type": "water", "position": (0, 0)},
+            {"type": "water", "position": (0, 4)},
+            {"type": "water", "position": (0, 8)},
             {"type": "shoreline", "position": (2, 0)},
+            {"type": "shoreline", "position": (2, 4)},
+            {"type": "shoreline", "position": (2, 8)},
             # TODO: Add more terrain types and their positions.
         ]
 
